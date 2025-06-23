@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import Darkmode from './Darkmode.vue';
+import ThemeSwitcher from './ThemeSwitcher.vue';
 
 
 
@@ -46,7 +46,7 @@ openActive.value = false;
             <div class="flex gap-[16px] items-center">
                 <button class="font-montserrat font-semibold text-[18px]">Let's talk</button>
 
-             <Darkmode />
+             <ThemeSwitcher />
 <!-- 
                 <div class="relative">
                     <button class="flex items-center gap-2" @click="active = !active">
