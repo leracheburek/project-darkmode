@@ -1,10 +1,10 @@
   <template>
     <div class="relative inline-block text-left">
-    <button class="flex items-center gap-2" @click="toggleDark" >
-      <img src="../assets/img/sun-svgrepo-com.svg" alt="" class="w-5 h-5 dark:hidden " />
-      <img src="../assets/img/lightSun.svg" alt="" class="w-5 h-5 hidden dark:block">
-    </button>
-<!-- 
+      <button class="flex items-center gap-2" @click="toggleDark">
+        <img src="../assets/img/sun-svgrepo-com.svg" alt="" class="w-5 h-5 dark:hidden " />
+        <img src="../assets/img/lightSun.svg" alt="" class="w-5 h-5 hidden dark:block">
+      </button>
+      <!-- 
     <ul v-if="active"
       class="absolute right-0 mt-2 w-[135px] text-center bg-white border rounded-[20px] shadow-md z-10">
       <li v-for="item in dropdowns" :key="item.name" @click="handleClick(item)"
@@ -13,7 +13,7 @@
         <span>{{ item.name }}</span>
       </li>
     </ul> -->
-  </div>
+    </div>
   </template>
 
 <script setup>

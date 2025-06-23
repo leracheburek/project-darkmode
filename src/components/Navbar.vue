@@ -2,35 +2,22 @@
 import { ref } from 'vue';
 import ThemeSwitcher from './ThemeSwitcher.vue';
 
-
-
-
-
 const openActive = ref(false);
 const languageList = ['UKR', 'ENG']
 const selectedlanguageList = ref(languageList[0]);
 const handlClick = (item) => {
-selectedlanguageList.value = item;
-openActive.value = false;
+    selectedlanguageList.value = item;
+    openActive.value = false;
 }
-
-
 </script>
 
-
-
 <template>
-
     <header class="max-w-[1312px] mx-auto">
         <div class="flex justify-between items-center">
-
-
             <div class="flex items-center gap-2">
                 <img src="../assets/img/logo.svg" alt="logo.img">
                 <h1 class="text-[32px] font-alternates font-medium">maal</h1>
             </div>
-
-
             <nav>
                 <ul class="flex gap-[32px] text-[18px] font-montserrat font-medium">
                     <li><a href="#">Realizations</a></li>
@@ -41,13 +28,10 @@ openActive.value = false;
                     <li><a href="#">TechBlog</a></li>
                 </ul>
             </nav>
-
-
             <div class="flex gap-[16px] items-center">
                 <button class="font-montserrat font-semibold text-[18px]">Let's talk</button>
-
-             <ThemeSwitcher />
-<!-- 
+                <ThemeSwitcher />
+                <!-- 
                 <div class="relative">
                     <button class="flex items-center gap-2" @click="active = !active">
                         <img :src="selectedVal.icon" alt="">
@@ -62,7 +46,6 @@ openActive.value = false;
                         </li>
                     </ul>
                 </div> -->
-
                 <div>
                     <button @click="openActive = !openActive" class="flex">
                         <img src="../assets/img/font-page.svg" alt="">
