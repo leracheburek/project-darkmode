@@ -1,7 +1,9 @@
 <script setup>
+import HelpSection from './components/HelpSection.vue';
 import HeroSection from './components/HeroSection.vue';
 import Navbar from './components/Navbar.vue';
 import SpecialFeatures from './components/SpecialFeatures.vue';
+
 </script>
 
 <template>
@@ -9,6 +11,7 @@ import SpecialFeatures from './components/SpecialFeatures.vue';
     <Navbar />
     <HeroSection />
     <SpecialFeatures />
+    <HelpSection />
   </div>
 </template>
 

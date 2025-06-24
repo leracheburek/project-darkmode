@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="bg-gray-100  dark:bg-black">
         <h1 class="text-center text-[36px] font-montserrat font-semibold pt-[112px] pb-[80px]">
             What makes us special?
         </h1>
@@ -8,10 +8,10 @@
             <div v-for="card in cards" :key="card.id"
                 class="w-[800px] h-[300px] flex-shrink-0  rounded-[20px] border border-[#ccc] bg-white p-[24px] flex justify-between">
                 <div class="pt-[32px] w-[54%] flex flex-col gap-[16px]">
-                    <h2 class="text-[32px] font-montserrat font-semibold ">
+                    <h2 class="text-[32px] font-montserrat font-semibold dark:text-black">
                         {{ card.header }}
                     </h2>
-                    <p class="text-[14px] font-ibm font-normal">{{ card.content }}</p>
+                    <p class="text-[14px] font-ibm font-normal dark:text-black">{{ card.content }}</p>
                 </div>
                 <img :src="card.img" alt="" />
             </div>
